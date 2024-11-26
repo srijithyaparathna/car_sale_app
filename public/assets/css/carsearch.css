@@ -1,0 +1,67 @@
+
+  /* Form container remains the same */
+  .search-widget {
+    background-color: rgba(245, 245, 245, 0.8); /* Semi-transparent light background */
+    padding: 40px; /* Inner padding for better spacing */
+    border-radius: 8px; /* Rounded corners */
+    width: 600px; /* Limits form width */
+    text-align: center; /* Center text within the form */
+    /* max-height: 600px; */
+    margin-left: 250px;
+    margin-top: 160px;
+    margin-right: 250px;
+  }
+
+  .form-control {
+    font-size: 18px; /* Consistent font size */
+    padding: 10px 15px; /* Same padding for input and select */
+    border: 1px solid #bb1111; /* Same border style */
+    border-radius: 5px; /* Same border-radius */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in size */
+}
+
+  
+  /* Form heading */
+  .search-widget h4 {
+    font-size: 28px; /* Font size for heading */
+    color: #212529; /* Slightly dark text */
+    font-weight: 600;
+    margin-bottom: 25px; /* Space below heading */
+  }
+  
+
+  
+  /* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    /* Targeting the form widget */
+    .search-widget {
+      padding: 20px; /* Reduced padding for mobile */
+      margin: 10px auto; /* Centered form with margin */
+      width: 100%; /* Full width on mobile */
+    }
+  
+    /* Heading inside the form */
+    .search-widget h4 {
+      font-size: 20px; /* Slightly smaller font size for the heading */
+    }
+  
+    /* Handling form rows (you can target .row directly from your HTML) */
+    .row {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Space between items */
+}
+  
+    /* Form controls: the select dropdowns */
+    select {
+      font-size: 14px; /* Slightly smaller font size for inputs */
+      width: 100%; /* Ensure full width for select inputs */
+    }
+  
+    /* Search button */
+    .btn-danger {
+      font-size: 16px; /* Slightly smaller font size for the button */
+    }
+  }
+  
